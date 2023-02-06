@@ -87,7 +87,21 @@ gv_age3 = '24'.
 * Now program will print person data
 
 PERFORM summary
-USING gv_first_name1
+USING p_fname
+      p_sname
+      p_pesel
+      p_street
+      p_number
+      p_pcode
+      p_city
+      p_prova
+      p_count
+      p_age.
+
+
+
+perform summary
+using gv_first_name1
       gv_surname1
       gv_pesel1
       gv_street1
