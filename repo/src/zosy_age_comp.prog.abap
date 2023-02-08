@@ -24,7 +24,10 @@ gv_age4 = 33.
 gv_age5 = 15.
 gv_age6 = 55.
 
-PERFORM compare_age USING gv_age1 gv_age2 CHANGING gv_comp1.
+PERFORM compare_age
+USING gv_age1
+      gv_age2
+CHANGING gv_comp1.
 
 PERFORM compare_age
 USING gv_age3
