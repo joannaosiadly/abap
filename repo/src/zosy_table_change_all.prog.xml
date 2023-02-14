@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZOSY_BUBBLE_SORT</NAME>
+    <NAME>ZOSY_TABLE_CHANGE_ALL</NAME>
     <STATE>A</STATE>
     <VARCL>X</VARCL>
     <SUBC>1</SUBC>
@@ -14,12 +14,33 @@
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Bubble sort</ENTRY>
-     <LENGTH>11</LENGTH>
+     <ENTRY>Reverse table</ENTRY>
+     <LENGTH>13</LENGTH>
     </item>
     <item>
      <ID>S</ID>
      <KEY>P_AGE1</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE10</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE11</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE12</KEY>
      <ENTRY>.</ENTRY>
      <LENGTH>11</LENGTH>
      <SPLIT>D</SPLIT>
@@ -48,6 +69,34 @@
     <item>
      <ID>S</ID>
      <KEY>P_AGE5</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE6</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE7</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE8</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>11</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AGE9</KEY>
      <ENTRY>.</ENTRY>
      <LENGTH>11</LENGTH>
      <SPLIT>D</SPLIT>
