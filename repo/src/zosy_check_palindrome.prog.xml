@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZOSY_DIV</NAME>
+    <NAME>ZOSY_CHECK_PALINDROME</NAME>
     <STATE>A</STATE>
     <VARCL>X</VARCL>
     <SUBC>1</SUBC>
@@ -14,8 +14,15 @@
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Div</ENTRY>
+     <ENTRY>Check palindrome</ENTRY>
      <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_WORD</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
     </item>
    </TPOOL>
   </asx:values>
