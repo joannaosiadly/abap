@@ -1,11 +1,11 @@
 *&---------------------------------------------------------------------*
-*& Report  ZOSY_BUBBLE_SORT
+*& Report  ZOSY_TABLE_CHNGE_ALL
 *&
 *&---------------------------------------------------------------------*
 *&
 *&
 *&---------------------------------------------------------------------*
-REPORT zosy_bubble_sort.
+REPORT zosy_table_reverse_odd.
 
 PARAMETERS p_age1 TYPE zosy_age.
 PARAMETERS p_age2 TYPE zosy_age.
@@ -21,15 +21,11 @@ PARAMETERS p_age11 TYPE zosy_age.
 PARAMETERS p_age12 TYPE zosy_age.
 
 
-
-
 DATA gt_age TYPE STANDARD TABLE OF zosy_age.
 DATA gv_age TYPE zosy_age.
 DATA gv_length TYPE i.
-DATA gv_age1 TYPE zosy_age.
-DATA gv_age2 TYPE zosy_age.
+DATA gv_age_temp TYPE zosy_age.
 DATA gv_i TYPE i.
-DATA gv_j TYPE i.
 
 IF p_age1 IS NOT INITIAL.
   APPEND p_age1 TO gt_age.
@@ -83,34 +79,17 @@ gv_length = lines( gt_age ).
 
 
 gv_i = 1.
-gv_j = 1.
 
-WHILE gv_j < gv_length.
+WHILE gv_i <= gv_length div 2.
 
-  gv_i = 1.
+  READ TABLE gt_age INDEX gv_i INTO gv_age.
+  READ TABLE gt_age INDEX gv_length + 1 - gv_i INTO gv_age_temp.
+  MODIFY gt_age INDEX gv_length + 1 - gv_i FROM gv_age.
+  MODIFY gt_age INDEX gv_i FROM gv_age_temp.
 
-  WHILE gv_i < gv_length.
-
-    READ TABLE gt_age INDEX gv_i INTO gv_age1.
-    READ TABLE gt_age INDEX gv_i + 1 INTO gv_age2.
-
-    IF gv_age2 < gv_age1.
-
-      MODIFY gt_age INDEX gv_i + 1 FROM gv_age1.
-      MODIFY gt_age INDEX gv_i FROM gv_age2.
-
-    ELSE.
-
-    ENDIF.
-
-    gv_i = gv_i + 1.
-
-  ENDWHILE.
-  gv_j = gv_j + 1.
+  gv_i = gv_i + 1.
 
 ENDWHILE.
-
-
 
 LOOP AT gt_age INTO gv_age.
   WRITE gv_age.

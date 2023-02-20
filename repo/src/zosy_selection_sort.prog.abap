@@ -1,11 +1,11 @@
 *&---------------------------------------------------------------------*
-*& Report  ZOSY_BUBBLE_SORT
+*& Report  ZOSY_SELECTION_SORT
 *&
 *&---------------------------------------------------------------------*
 *&
 *&
 *&---------------------------------------------------------------------*
-REPORT zosy_bubble_sort.
+REPORT zosy_selection_sort.
 
 PARAMETERS p_age1 TYPE zosy_age.
 PARAMETERS p_age2 TYPE zosy_age.
@@ -20,16 +20,17 @@ PARAMETERS p_age10 TYPE zosy_age.
 PARAMETERS p_age11 TYPE zosy_age.
 PARAMETERS p_age12 TYPE zosy_age.
 
-
-
-
 DATA gt_age TYPE STANDARD TABLE OF zosy_age.
+DATA gt_age_sorted TYPE STANDARD TABLE OF zosy_age.
 DATA gv_age TYPE zosy_age.
 DATA gv_length TYPE i.
+DATA gv_curr_length TYPE i.
 DATA gv_age1 TYPE zosy_age.
 DATA gv_age2 TYPE zosy_age.
+DATA gv_min TYPE zosy_age.
 DATA gv_i TYPE i.
 DATA gv_j TYPE i.
+DATA gv_min_index TYPE i.
 
 IF p_age1 IS NOT INITIAL.
   APPEND p_age1 TO gt_age.
@@ -79,39 +80,44 @@ IF p_age12 IS NOT INITIAL.
   APPEND p_age12 TO gt_age.
 ENDIF.
 
+
+gv_i = 1.
+
 gv_length = lines( gt_age ).
 
 
-gv_i = 1.
-gv_j = 1.
+WHILE gv_i <= gv_length.
+  READ TABLE gt_age INDEX 1 INTO gv_min.
+  gv_j = 1.
 
-WHILE gv_j < gv_length.
+  gv_curr_length = lines( gt_age ).
 
-  gv_i = 1.
+  WHILE gv_j <= gv_curr_length.
 
-  WHILE gv_i < gv_length.
 
-    READ TABLE gt_age INDEX gv_i INTO gv_age1.
-    READ TABLE gt_age INDEX gv_i + 1 INTO gv_age2.
+    READ TABLE gt_age INDEX gv_j INTO gv_age.
 
-    IF gv_age2 < gv_age1.
-
-      MODIFY gt_age INDEX gv_i + 1 FROM gv_age1.
-      MODIFY gt_age INDEX gv_i FROM gv_age2.
-
-    ELSE.
+    IF gv_age <= gv_min.
+      gv_min = gv_age.
+      gv_min_index = gv_j.
 
     ENDIF.
 
-    gv_i = gv_i + 1.
+
+    gv_j = gv_j + 1.
 
   ENDWHILE.
-  gv_j = gv_j + 1.
+
+  APPEND gv_min TO gt_age_sorted.
+  DELETE gt_age INDEX gv_min_index.
+
+
+  gv_i = gv_i + 1.
 
 ENDWHILE.
 
-
-
-LOOP AT gt_age INTO gv_age.
+*WRITE gv_min.
+*
+LOOP AT gt_age_sorted INTO gv_age.
   WRITE gv_age.
 ENDLOOP.
