@@ -15,7 +15,7 @@ DATA gt_numberinwords TYPE STANDARD TABLE OF zosy_number2.
 DATA gv_numberinwords TYPE c LENGTH 100.
 DATA gv_result TYPE c LENGTH 100.
 
-gv_number = 999.
+gv_number = 11.
 
 PERFORM inwords
 USING gv_number
@@ -149,8 +149,8 @@ FORM inwords
         ENDIF.
       ENDIF.
     ENDIF.
-  ELSE.
 
+else.
     IF  10 <= iv_number+1(2) AND iv_number+1(2) < 19.
 
       IF iv_number+1(2) = 10.
@@ -212,7 +212,7 @@ FORM inwords
           ENDIF.
         ENDIF.
       ENDIF.
-    ENDIF.
+
 
 
     IF  iv_number+1(2) >= 20.
@@ -266,7 +266,7 @@ FORM inwords
       ENDIF.
     ENDIF.
 
-  ENDIF.
+
 
   IF iv_number+2(1) = 1.
     WRITE 'jeden'.
@@ -320,6 +320,7 @@ FORM inwords
         ENDIF.
       ENDIF.
     ENDIF.
+  ENDIF.
   ENDIF.
 
   WRITE /.
