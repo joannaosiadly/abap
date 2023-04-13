@@ -9,9 +9,11 @@ REPORT zosy_screen_person.
 
 DATA gv_okcode TYPE sy-ucomm.
 DATA gs_screen_person TYPE zosy_str_screen_person.
+DATA gs_person_temp TYPE zosy_str_screen_person.
 DATA gt_screen_person TYPE zosy_tab_screen_person.
 DATA gv_current_index TYPE i.
 DATA gv_length TYPE i.
+DATA gv_add TYPE c.
 
 
 
@@ -21,7 +23,7 @@ INCLUDE zosy_screen_person_f01.
 
 START-OF-SELECTION.
 
-
+  gv_add = 'x'.
 
   gs_screen_person-firstname = 'Jan'.
   gs_screen_person-surname = 'Kowalski'.
