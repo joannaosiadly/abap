@@ -21,7 +21,7 @@
       <TYPE>N</TYPE>
       <NEXTSCREEN>0100</NEXTSCREEN>
       <LINES>027</LINES>
-      <COLUMNS>125</COLUMNS>
+      <COLUMNS>126</COLUMNS>
      </HEADER>
      <CONTAINERS>
       <RPY_DYCATT>
@@ -109,7 +109,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_FIRST_NAME</NAME>
-       <TEXT>FIRST_NAME___________</TEXT>
+       <TEXT>First_name___________</TEXT>
        <LINE>005</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -139,7 +139,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_SURNAME</NAME>
-       <TEXT>SURNAME______________</TEXT>
+       <TEXT>Surname______________</TEXT>
        <LINE>006</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -169,7 +169,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_STREET</NAME>
-       <TEXT>STREET_______________</TEXT>
+       <TEXT>Street_______________</TEXT>
        <LINE>007</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -199,7 +199,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_NUMBER_BULD</NAME>
-       <TEXT>BULDING_NUMBER_______</TEXT>
+       <TEXT>Bulding_number_______</TEXT>
        <LINE>008</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -244,7 +244,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_CITY</NAME>
-       <TEXT>CITY_________________</TEXT>
+       <TEXT>City_________________</TEXT>
        <LINE>009</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -274,7 +274,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_SEX</NAME>
-       <TEXT>SEX__________________</TEXT>
+       <TEXT>Sex__________________</TEXT>
        <LINE>010</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -304,7 +304,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_AGE</NAME>
-       <TEXT>AGE__________________</TEXT>
+       <TEXT>Age__________________</TEXT>
        <LINE>011</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>
@@ -334,7 +334,7 @@
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
        <NAME>TEXT_EYE_COLOR</NAME>
-       <TEXT>EYE_COLOR____________</TEXT>
+       <TEXT>Eye_color____________</TEXT>
        <LINE>012</LINE>
        <COLUMN>001</COLUMN>
        <LENGTH>021</LENGTH>

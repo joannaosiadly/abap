@@ -7,9 +7,17 @@
 *       text
 *----------------------------------------------------------------------*
 MODULE status_0100 OUTPUT.
-*  SET PF-STATUS 'xxxxxxxx'.
+  SET PF-STATUS 'STATUS_0100'.
 *  SET TITLEBAR 'xxx'.
-  PERFORM hide_pbo
-  USING gv_text_hidden.
 
+
+ENDMODULE.
+*&---------------------------------------------------------------------*
+*&      Module  FIELDS_VISIBILITY  OUTPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+MODULE fields_visibility OUTPUT.
+  PERFORM hide_fields
+    USING gv_text_hidden.
 ENDMODULE.

@@ -21,7 +21,7 @@
       <TYPE>N</TYPE>
       <NEXTSCREEN>0100</NEXTSCREEN>
       <LINES>027</LINES>
-      <COLUMNS>122</COLUMNS>
+      <COLUMNS>123</COLUMNS>
      </HEADER>
      <CONTAINERS>
       <RPY_DYCATT>
@@ -30,21 +30,6 @@
       </RPY_DYCATT>
      </CONTAINERS>
      <FIELDS>
-      <RPY_DYFATC>
-       <CONT_TYPE>SCREEN</CONT_TYPE>
-       <CONT_NAME>SCREEN</CONT_NAME>
-       <TYPE>PUSH</TYPE>
-       <NAME>BUTTON_EXIT</NAME>
-       <TEXT>EXIT</TEXT>
-       <LINE>001</LINE>
-       <COLUMN>070</COLUMN>
-       <LENGTH>004</LENGTH>
-       <VISLENGTH>004</VISLENGTH>
-       <HEIGHT>001</HEIGHT>
-       <PUSH_FCODE>EXIT</PUSH_FCODE>
-       <FORMAT>CHAR</FORMAT>
-       <REQU_ENTRY>N</REQU_ENTRY>
-      </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
@@ -109,7 +94,11 @@
        <LINE>PROCESS BEFORE OUTPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE STATUS_0100.</LINE>
+       <LINE>MODULE status_0100.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
+       <LINE>MODULE fields_visibility.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
        <LINE>*</LINE>
@@ -118,18 +107,113 @@
        <LINE>PROCESS AFTER INPUT.</LINE>
       </RPY_DYFLOW>
       <RPY_DYFLOW>
-       <LINE>MODULE USER_COMMAND_0100.</LINE>
+       <LINE>MODULE user_command_0100.</LINE>
       </RPY_DYFLOW>
      </FLOW_LOGIC>
      <SPACES>
       <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
       <item>0</item>
       <item>0</item>
-      <item>0</item>
-      <item>0</item>
+      <item>2</item>
      </SPACES>
     </item>
    </DYNPROS>
+   <CUA>
+    <ADM>
+     <ACTCODE>000001</ACTCODE>
+     <PFKCODE>000001</PFKCODE>
+    </ADM>
+    <STA>
+     <RSMPE_STAT>
+      <CODE>STATUS_0100</CODE>
+      <MODAL>D</MODAL>
+      <ACTCODE>000001</ACTCODE>
+      <PFKCODE>000001</PFKCODE>
+      <BUTCODE>0001</BUTCODE>
+      <INT_NOTE>Status for screen 0100</INT_NOTE>
+     </RSMPE_STAT>
+    </STA>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>EXIT</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>002</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>003</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>004</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+     </RSMPE_FUNT>
+    </FUN>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>002</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>004</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>003</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <SET>
+     <RSMPE_STAF>
+      <STATUS>STATUS_0100</STATUS>
+      <FUNCTION>EXIT</FUNCTION>
+     </RSMPE_STAF>
+    </SET>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Status for screen 0100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Status for screen 0100</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Status for screen 0100</INT_NOTE>
+     </RSMPE_ATRT>
+    </DOC>
+   </CUA>
    <TPOOL>
     <item>
      <ID>R</ID>

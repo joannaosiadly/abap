@@ -24,9 +24,9 @@ FORM user_command_0100 .
       CHANGING gv_text_hidden.
 
     WHEN 'SHOW'.
-      PERFORM show.
-*      gv_text_hidden = ' '.
-      CLEAR gv_text_hidden.
+      PERFORM show
+      CHANGING gv_text_hidden.
+
     WHEN OTHERS.
 
   ENDCASE.
@@ -48,20 +48,6 @@ FORM hide_clicked
 
 ENDFORM.
 
-FORM hide_pbo
-  USING iv_text_hidden TYPE c.
-
-  LOOP AT SCREEN.
-    IF screen-name = 'GV_TEXT'.
-      IF iv_text_hidden = 'X'.
-        screen-active = '0'.
-        MODIFY SCREEN.
-      ENDIF.
-    ENDIF.
-
-  ENDLOOP.
-
-ENDFORM.
 
 *&---------------------------------------------------------------------*
 *&      Form  SHOW
@@ -71,7 +57,48 @@ ENDFORM.
 *  -->  p1        text
 *  <--  p2        text
 *----------------------------------------------------------------------*
-FORM show .
-  gv_text_hidden = ' '.
+FORM show
 
+  CHANGING cv_text_hidden TYPE c.
+
+  cv_text_hidden = ' '.
+
+
+
+ENDFORM.
+
+*&---------------------------------------------------------------------*
+*&      Form  HIDE_FIELDS
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*      -->P_GV_TEXT_HIDDEN  text
+*----------------------------------------------------------------------*
+FORM hide_fields
+    USING iv_text_hidden TYPE c.
+
+
+  LOOP AT SCREEN.
+    IF screen-name = 'GV_TEXT'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_HIDE'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_SHOW'.
+      IF iv_text_hidden = ' '.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+  ENDLOOP.
 ENDFORM.
