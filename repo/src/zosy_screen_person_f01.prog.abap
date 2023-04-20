@@ -51,7 +51,9 @@ FORM user_command_0100 .
 
       PERFORM add
       CHANGING gs_screen_person
-               gv_add.
+               gv_add
+               gv_text_hidden
+               gv_cancel.
 
     WHEN 'DELETE'.
 
@@ -164,10 +166,14 @@ ENDFORM.
 *----------------------------------------------------------------------*
 FORM add
   CHANGING cs_screen_person TYPE zosy_str_screen_person
-           cv_add TYPE c.
+           cv_add TYPE c
+           cv_text_hidden TYPE c
+           cv_cancel TYPE c.
 
   CLEAR cs_screen_person.
   cv_add = 'X'.
+  cv_text_hidden = 'X'.
+  cv_cancel = ' '.
 
 ENDFORM.
 *&---------------------------------------------------------------------*
@@ -224,3 +230,73 @@ FORM cancel
   ENDIF.
 
 ENDFORM.
+*&---------------------------------------------------------------------*
+*&      Form  HIDE_FIELDS
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*  -->  p1        text
+*  <--  p2        text
+*----------------------------------------------------------------------*
+FORM hide_fields
+    USING iv_text_hidden TYPE c
+          iv_cancel TYPE c.
+
+
+  LOOP AT SCREEN.
+
+    IF screen-name = 'BUTTON_PREV'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_NEXT'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_ADD'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_DELETE'.
+      IF iv_text_hidden = 'X'.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_CANCEL'.
+      IF iv_text_hidden = ' '.
+        iv_cancel = ' '.
+        screen-active = '0'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+    IF screen-name = 'BUTTON_CANCEL'.
+      IF iv_text_hidden = 'X'.
+        iv_cancel = 'X'.
+        screen-active = '1'.
+        MODIFY SCREEN.
+      ENDIF.
+    ENDIF.
+
+
+  ENDLOOP.
+ENDFORM.
+*&---------------------------------------------------------------------*
+*&      Form  FIELD_CANCEL
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*  -->  p1        text
+*  <--  p2        text
+*----------------------------------------------------------------------*

@@ -14,7 +14,8 @@ DATA gt_screen_person TYPE zosy_tab_screen_person.
 DATA gv_current_index TYPE i.
 DATA gv_length TYPE i.
 DATA gv_add TYPE c.
-
+DATA gv_text_hidden TYPE c.
+DATA gv_cancel TYPE c.
 
 
 INCLUDE zosy_screen_person_0o01.
@@ -23,7 +24,9 @@ INCLUDE zosy_screen_person_f01.
 
 START-OF-SELECTION.
 
-  gv_add = 'x'.
+gv_text_hidden = ' '.
+gv_cancel = 'X'.
+
 
   gs_screen_person-firstname = 'Jan'.
   gs_screen_person-surname = 'Kowalski'.
