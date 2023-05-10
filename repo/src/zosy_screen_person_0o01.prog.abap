@@ -18,12 +18,33 @@ ENDMODULE.
 MODULE fields_visibility OUTPUT.
 
   PERFORM hide_fields
-  USING gv_text_hidden
-        gv_cancel.
+  USING
+        gv_add
+        gt_screen_person
+  CHANGING gv_current_index.
 
 ENDMODULE.
 *&---------------------------------------------------------------------*
 *&      Module  FIELD_CANCEL  OUTPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+*&---------------------------------------------------------------------*
+*&      Module  NUMBER_IN_WORDS  OUTPUT
+*&---------------------------------------------------------------------*
+*       text
+*----------------------------------------------------------------------*
+MODULE number_in_words OUTPUT.
+
+PERFORM big_number_in_words
+USING zosy_str_screen_person_scr-income
+CHANGING zosy_str_screen_person_scr-income_in_words.
+
+
+
+ENDMODULE.
+*&---------------------------------------------------------------------*
+*&      Module  RESULT  OUTPUT
 *&---------------------------------------------------------------------*
 *       text
 *----------------------------------------------------------------------*

@@ -21,7 +21,7 @@
       <TYPE>N</TYPE>
       <NEXTSCREEN>0100</NEXTSCREEN>
       <LINES>027</LINES>
-      <COLUMNS>127</COLUMNS>
+      <COLUMNS>147</COLUMNS>
      </HEADER>
      <CONTAINERS>
       <RPY_DYCATT>
@@ -108,14 +108,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_FIRST_NAME</NAME>
-       <TEXT>First_name___________</TEXT>
-       <LINE>005</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-FIRSTNAME</NAME>
+       <TEXT>First_name__________</TEXT>
+       <LINE>003</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -123,14 +126,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-FIRSTNAME</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-FIRSTNAME</NAME>
        <TEXT>______________________________</TEXT>
-       <LINE>005</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>003</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>030</LENGTH>
        <VISLENGTH>030</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -138,14 +144,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_SURNAME</NAME>
-       <TEXT>Surname______________</TEXT>
-       <LINE>006</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-SURNAME</NAME>
+       <TEXT>Surname_____________</TEXT>
+       <LINE>004</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -153,14 +162,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-SURNAME</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-SURNAME</NAME>
        <TEXT>________________________________________</TEXT>
-       <LINE>006</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>004</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>040</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -168,14 +180,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_STREET</NAME>
-       <TEXT>Street_______________</TEXT>
-       <LINE>007</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-STREET</NAME>
+       <TEXT>Street______________</TEXT>
+       <LINE>005</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -183,14 +198,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-STREET</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-STREET</NAME>
        <TEXT>________________________________________</TEXT>
-       <LINE>007</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>005</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>040</LENGTH>
        <VISLENGTH>040</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -198,14 +216,16 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_NUMBER_BULD</NAME>
-       <TEXT>Bulding_number_______</TEXT>
-       <LINE>008</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-NUMBER_BULD</NAME>
+       <TEXT>Number______________</TEXT>
+       <LINE>006</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -213,14 +233,52 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-NUMBER_BULD</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-NUMBER_BULD</NAME>
        <TEXT>__________</TEXT>
-       <LINE>008</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>006</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>010</LENGTH>
        <VISLENGTH>010</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>NUMC</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <FOREIGNKEY>X</FOREIGNKEY>
+       <INPUT_FLD>X</INPUT_FLD>
+       <OUTPUT_FLD>X</OUTPUT_FLD>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEXT</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-CITY</NAME>
+       <TEXT>City________________</TEXT>
+       <LINE>007</LINE>
+       <COLUMN>001</COLUMN>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
+       <REQU_ENTRY>N</REQU_ENTRY>
+       <LABELLEFT>X</LABELLEFT>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEMPLATE</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-CITY</NAME>
+       <TEXT>________________________________________</TEXT>
+       <LINE>007</LINE>
+       <COLUMN>022</COLUMN>
+       <LENGTH>040</LENGTH>
+       <VISLENGTH>040</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -230,8 +288,8 @@
        <TYPE>PUSH</TYPE>
        <NAME>BUTTON_ADD</NAME>
        <TEXT>ADD__</TEXT>
-       <LINE>008</LINE>
-       <COLUMN>072</COLUMN>
+       <LINE>007</LINE>
+       <COLUMN>132</COLUMN>
        <LENGTH>005</LENGTH>
        <VISLENGTH>005</VISLENGTH>
        <HEIGHT>001</HEIGHT>
@@ -243,14 +301,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_CITY</NAME>
-       <TEXT>City_________________</TEXT>
-       <LINE>009</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-SEX</NAME>
+       <TEXT>Sex_________________</TEXT>
+       <LINE>008</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -258,44 +319,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-CITY</NAME>
-       <TEXT>________________________________________</TEXT>
-       <LINE>009</LINE>
-       <COLUMN>023</COLUMN>
-       <LENGTH>040</LENGTH>
-       <VISLENGTH>040</VISLENGTH>
-       <HEIGHT>001</HEIGHT>
-       <FORMAT>CHAR</FORMAT>
-       <INPUT_FLD>X</INPUT_FLD>
-       <OUTPUT_FLD>X</OUTPUT_FLD>
-      </RPY_DYFATC>
-      <RPY_DYFATC>
-       <CONT_TYPE>SCREEN</CONT_TYPE>
-       <CONT_NAME>SCREEN</CONT_NAME>
-       <TYPE>TEXT</TYPE>
-       <NAME>TEXT_SEX</NAME>
-       <TEXT>Sex__________________</TEXT>
-       <LINE>010</LINE>
-       <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
-       <HEIGHT>001</HEIGHT>
-       <FORMAT>CHAR</FORMAT>
-       <REQU_ENTRY>N</REQU_ENTRY>
-       <LABELLEFT>X</LABELLEFT>
-      </RPY_DYFATC>
-      <RPY_DYFATC>
-       <CONT_TYPE>SCREEN</CONT_TYPE>
-       <CONT_NAME>SCREEN</CONT_NAME>
-       <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-SEX</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-SEX</NAME>
        <TEXT>_</TEXT>
-       <LINE>010</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>008</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>001</LENGTH>
        <VISLENGTH>001</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -303,14 +337,16 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_AGE</NAME>
-       <TEXT>Age__________________</TEXT>
-       <LINE>011</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-AGE</NAME>
+       <TEXT>Age_</TEXT>
+       <LINE>009</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>004</LENGTH>
+       <VISLENGTH>004</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -318,14 +354,16 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-AGE</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-AGE</NAME>
        <TEXT>___</TEXT>
-       <LINE>011</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>009</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>003</LENGTH>
        <VISLENGTH>003</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>NUMC</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
       </RPY_DYFATC>
@@ -333,14 +371,17 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEXT</TYPE>
-       <NAME>TEXT_EYE_COLOR</NAME>
-       <TEXT>Eye_color____________</TEXT>
-       <LINE>012</LINE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-EYE_COLOR</NAME>
+       <TEXT>Eye_color___________</TEXT>
+       <LINE>010</LINE>
        <COLUMN>001</COLUMN>
-       <LENGTH>021</LENGTH>
-       <VISLENGTH>021</VISLENGTH>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <UP_LOWER>X</UP_LOWER>
        <REQU_ENTRY>N</REQU_ENTRY>
        <LABELLEFT>X</LABELLEFT>
       </RPY_DYFATC>
@@ -348,16 +389,89 @@
        <CONT_TYPE>SCREEN</CONT_TYPE>
        <CONT_NAME>SCREEN</CONT_NAME>
        <TYPE>TEMPLATE</TYPE>
-       <NAME>GS_SCREEN_PERSON-EYE_COLOR</NAME>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-EYE_COLOR</NAME>
        <TEXT>______________________________</TEXT>
-       <LINE>012</LINE>
-       <COLUMN>023</COLUMN>
+       <LINE>010</LINE>
+       <COLUMN>022</COLUMN>
        <LENGTH>030</LENGTH>
        <VISLENGTH>030</VISLENGTH>
        <HEIGHT>001</HEIGHT>
        <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <UP_LOWER>X</UP_LOWER>
+       <FOREIGNKEY>X</FOREIGNKEY>
        <INPUT_FLD>X</INPUT_FLD>
        <OUTPUT_FLD>X</OUTPUT_FLD>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEXT</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-INCOME</NAME>
+       <TEXT>Income______________</TEXT>
+       <LINE>011</LINE>
+       <COLUMN>001</COLUMN>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <REQU_ENTRY>N</REQU_ENTRY>
+       <LABELLEFT>X</LABELLEFT>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEMPLATE</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-INCOME</NAME>
+       <TEXT>_______</TEXT>
+       <LINE>011</LINE>
+       <COLUMN>022</COLUMN>
+       <LENGTH>007</LENGTH>
+       <VISLENGTH>007</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>NUMC</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <FOREIGNKEY>X</FOREIGNKEY>
+       <INPUT_FLD>X</INPUT_FLD>
+       <OUTPUT_FLD>X</OUTPUT_FLD>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEXT</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-INCOME_IN_WORDS</NAME>
+       <TEXT>Number_in_words_____</TEXT>
+       <LINE>012</LINE>
+       <COLUMN>001</COLUMN>
+       <LENGTH>020</LENGTH>
+       <VISLENGTH>020</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>2</MODIFIC>
+       <REQU_ENTRY>N</REQU_ENTRY>
+       <LABELLEFT>X</LABELLEFT>
+      </RPY_DYFATC>
+      <RPY_DYFATC>
+       <CONT_TYPE>SCREEN</CONT_TYPE>
+       <CONT_NAME>SCREEN</CONT_NAME>
+       <TYPE>TEMPLATE</TYPE>
+       <NAME>ZOSY_STR_SCREEN_PERSON_SCR-INCOME_IN_WORDS</NAME>
+       <TEXT>____________________________________________________________________________________________________________________________________</TEXT>
+       <ROLLING>X</ROLLING>
+       <LINE>012</LINE>
+       <COLUMN>022</COLUMN>
+       <LENGTH>255</LENGTH>
+       <VISLENGTH>124</VISLENGTH>
+       <HEIGHT>001</HEIGHT>
+       <FORMAT>CHAR</FORMAT>
+       <FROM_DICT>X</FROM_DICT>
+       <MODIFIC>X</MODIFIC>
+       <FOREIGNKEY>X</FOREIGNKEY>
+       <OUTPUT_FLD>X</OUTPUT_FLD>
+       <REQU_ENTRY>N</REQU_ENTRY>
       </RPY_DYFATC>
       <RPY_DYFATC>
        <CONT_TYPE>SCREEN</CONT_TYPE>
@@ -366,7 +480,7 @@
        <NAME>BUTTON_PREV</NAME>
        <TEXT>PREV</TEXT>
        <LINE>014</LINE>
-       <COLUMN>001</COLUMN>
+       <COLUMN>024</COLUMN>
        <LENGTH>004</LENGTH>
        <VISLENGTH>004</VISLENGTH>
        <HEIGHT>001</HEIGHT>
@@ -381,7 +495,7 @@
        <NAME>BUTTON_NEXT</NAME>
        <TEXT>NEXT</TEXT>
        <LINE>014</LINE>
-       <COLUMN>075</COLUMN>
+       <COLUMN>031</COLUMN>
        <LENGTH>004</LENGTH>
        <VISLENGTH>004</VISLENGTH>
        <HEIGHT>001</HEIGHT>
@@ -411,8 +525,14 @@
       </RPY_DYFLOW>
       <RPY_DYFLOW/>
       <RPY_DYFLOW>
+       <LINE>MODULE number_in_words.</LINE>
+      </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW>
        <LINE>MODULE fields_visibility.</LINE>
       </RPY_DYFLOW>
+      <RPY_DYFLOW/>
+      <RPY_DYFLOW/>
       <RPY_DYFLOW/>
       <RPY_DYFLOW>
        <LINE>PROCESS AFTER INPUT.</LINE>
@@ -426,6 +546,10 @@
       <item>2</item>
       <item>0</item>
       <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
       <item>0</item>
       <item>0</item>
       <item>2</item>

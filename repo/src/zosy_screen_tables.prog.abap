@@ -16,9 +16,10 @@ INCLUDE zosy_screen_tables_f01.
 
 START-OF-SELECTION.
 
-  zosy_str_screen_person-firstname = 'Jan'.
-  zosy_str_screen_person-surname = 'Kowalski'.
 
-  CALL SCREEN '0100'.
+zosy_str_screen_person-firstname = 'Jan'.
+zosy_str_screen_person-surname = 'Kowalski'.
 
-  WRITE 'end'.
+CALL SCREEN '0100'.
+
+  WRITE 'PROGRAM END'.

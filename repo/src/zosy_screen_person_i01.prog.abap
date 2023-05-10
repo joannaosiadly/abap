@@ -7,5 +7,5 @@
 *       text
 *----------------------------------------------------------------------*
 MODULE user_command_0100 INPUT.
-PERFORM user_command_0100.
+  PERFORM user_command_0100.
 ENDMODULE.
